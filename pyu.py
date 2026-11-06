@@ -22,7 +22,7 @@ from aiogram.exceptions import TelegramForbiddenError, TelegramBadRequest
 from database import is_gate_enabled, get_user_credits, update_credits, get_db_connection
 from bin import get_bin_info
 from sub import get_premium_status
-from gates import payu  # Import local PayU gate script
+import payu  # Import local PayU gate script
 
 # Disable InsecureRequestWarnings for PayU requests
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
